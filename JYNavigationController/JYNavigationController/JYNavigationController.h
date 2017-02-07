@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JYNavigationController : UINavigationController <UIGestureRecognizerDelegate>
-- (void)removePanGesture; // 关闭手势返回
-- (void)addPanGesture; // 打开手势返回
+@interface ZJYNavigationController : UINavigationController <UIGestureRecognizerDelegate>
+- (void)removePanGesture;
+- (void)addPanGesture;
 @end

@@ -6,21 +6,21 @@
 //  Copyright © 2017年 personal. All rights reserved.
 //
 
-#import "JYNavigationController.h"
+#import "ZJYNavigationController.h"
 #import <objc/runtime.h>
 
-@interface JYNavigationController ()
+@interface ZJYNavigationController ()
 @property (nonatomic, assign) BOOL isMoving;
-@property (nonatomic, assign) CGPoint startTouch; // 开始触碰点
+@property (nonatomic, assign) CGPoint startTouch;
 @property (nonatomic, strong) UIView *backgroundView;
 @property (nonatomic, strong) UIView *blackMask;
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
-@property (nonatomic, assign) NSUInteger screenWidth; // 屏幕宽度
-@property (nonatomic, assign) NSUInteger screenWidth20; // 20倍屏宽
-@property (nonatomic, strong) UIImageView *lastScreenShotView; // 屏幕快照
+@property (nonatomic, assign) NSUInteger screenWidth;
+@property (nonatomic, assign) NSUInteger screenWidth20;
+@property (nonatomic, strong) UIImageView *lastScreenShotView;
 @end
 
-@implementation JYNavigationController
+@implementation ZJYNavigationController
 
 -(void)removePanGesture {
     self.panGesture.enabled = NO;
@@ -57,12 +57,9 @@
     self.panGesture.delegate = self;
     self.panGesture.delaysTouchesBegan = YES;
     [self.view addGestureRecognizer:self.panGesture];
-    self.interactivePopGestureRecognizer.enabled = NO;// 关闭系统自带滑动返回
+    self.interactivePopGestureRecognizer.enabled = NO;
 }
 
-/*
- 重写pushViewController方法,动态给控制器添加screenShot属性
- */
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     if (!viewController) return;
     UIViewController *vc = (UIViewController *)self.topViewController;
@@ -70,13 +67,10 @@
     [super pushViewController:viewController animated:animated];
 }
 
-/*
- 手势滑动返回方法
- */
 - (void)popViewController:(UIPanGestureRecognizer *)recognnizer{
     if (self.viewControllers.count <= 1) return;
     CGPoint touchPoint = [recognnizer locationInView:[UIApplication sharedApplication].keyWindow];
-    if (recognnizer.state == UIGestureRecognizerStateBegan) {// 手势开始
+    if (recognnizer.state == UIGestureRecognizerStateBegan) {
         _isMoving = YES;
         self.startTouch = touchPoint;
         if (!self.backgroundView) {
@@ -94,7 +88,7 @@
         
         self.lastScreenShotView = [self screenShot];
         [self.backgroundView insertSubview:self.lastScreenShotView belowSubview:self.blackMask];
-    } else if (recognnizer.state == UIGestureRecognizerStateEnded) {// 手势结束
+    } else if (recognnizer.state == UIGestureRecognizerStateEnded) {
         if (touchPoint.x - self.startTouch.x > 50) {
             [UIView animateWithDuration:0.2 animations:^{
                 [self moveViewWithX:self.screenWidth];
@@ -119,7 +113,7 @@
             
         }
         return;
-    } else if (recognnizer.state == UIGestureRecognizerStateCancelled) {// 手势取消
+    } else if (recognnizer.state == UIGestureRecognizerStateCancelled) {
         [UIView animateWithDuration:0.2 animations:^{
             [self moveViewWithX:0];
         } completion:^(BOOL finished) {
@@ -133,9 +127,6 @@
     }
 }
 
-/*
- 随手势移动页面
- */
 - (void)moveViewWithX:(float)x {
     x = x>self.screenWidth?self.screenWidth:x;
     x = x<0?0:x;
@@ -152,7 +143,7 @@
 }
 
 - (id)capture {
-    return [self.view snapshotViewAfterScreenUpdates:NO]; //截取屏幕快照
+    return [self.view snapshotViewAfterScreenUpdates:NO];
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
@@ -165,7 +156,7 @@
     }
 }
 
-- (id)screenShot{// 动态取出上页面快照
+- (id)screenShot{
     id scress =nil;
     NSArray *vs = self.viewControllers;
     UIViewController *vc = ((UIViewController *)vs[MAX(0, vs.count - 2)]);
