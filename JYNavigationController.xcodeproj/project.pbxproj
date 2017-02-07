@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		809E7FFF1E49E595007F64E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 809E7FFE1E49E595007F64E1 /* main.m */; };
 		809E80021E49E595007F64E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 809E80011E49E595007F64E1 /* AppDelegate.m */; };
-		809E80051E49E595007F64E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809E80041E49E595007F64E1 /* ViewController.m */; };
-		809E80081E49E595007F64E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809E80061E49E595007F64E1 /* Main.storyboard */; };
 		809E800A1E49E595007F64E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809E80091E49E595007F64E1 /* Assets.xcassets */; };
 		809E800D1E49E595007F64E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809E800B1E49E595007F64E1 /* LaunchScreen.storyboard */; };
 		809E80181E49E595007F64E1 /* JYNavigationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 809E80171E49E595007F64E1 /* JYNavigationControllerTests.m */; };
 		809E80231E49E595007F64E1 /* JYNavigationControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 809E80221E49E595007F64E1 /* JYNavigationControllerUITests.m */; };
+		809E80341E49E696007F64E1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809E80331E49E696007F64E1 /* FirstViewController.m */; };
+		809E80371E49E6BC007F64E1 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809E80361E49E6BC007F64E1 /* SecondViewController.m */; };
+		809E803A1E49E6CA007F64E1 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809E80391E49E6CA007F64E1 /* ThirdViewController.m */; };
+		809E803D1E49E7A0007F64E1 /* JYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809E803C1E49E7A0007F64E1 /* JYNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +41,6 @@
 		809E7FFE1E49E595007F64E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		809E80001E49E595007F64E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		809E80011E49E595007F64E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		809E80031E49E595007F64E1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		809E80041E49E595007F64E1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		809E80071E49E595007F64E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		809E80091E49E595007F64E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		809E800C1E49E595007F64E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		809E800E1E49E595007F64E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,14 @@
 		809E801E1E49E595007F64E1 /* JYNavigationControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JYNavigationControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		809E80221E49E595007F64E1 /* JYNavigationControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYNavigationControllerUITests.m; sourceTree = "<group>"; };
 		809E80241E49E595007F64E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		809E80321E49E696007F64E1 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		809E80331E49E696007F64E1 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		809E80351E49E6BC007F64E1 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		809E80361E49E6BC007F64E1 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		809E80381E49E6CA007F64E1 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		809E80391E49E6CA007F64E1 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		809E803B1E49E7A0007F64E1 /* JYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYNavigationController.h; sourceTree = "<group>"; };
+		809E803C1E49E7A0007F64E1 /* JYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +110,8 @@
 			children = (
 				809E80001E49E595007F64E1 /* AppDelegate.h */,
 				809E80011E49E595007F64E1 /* AppDelegate.m */,
-				809E80031E49E595007F64E1 /* ViewController.h */,
-				809E80041E49E595007F64E1 /* ViewController.m */,
-				809E80061E49E595007F64E1 /* Main.storyboard */,
+				809E80301E49E645007F64E1 /* Demo */,
+				809E80311E49E66E007F64E1 /* JYNavigationController */,
 				809E80091E49E595007F64E1 /* Assets.xcassets */,
 				809E800B1E49E595007F64E1 /* LaunchScreen.storyboard */,
 				809E800E1E49E595007F64E1 /* Info.plist */,
@@ -138,6 +144,28 @@
 				809E80241E49E595007F64E1 /* Info.plist */,
 			);
 			path = JYNavigationControllerUITests;
+			sourceTree = "<group>";
+		};
+		809E80301E49E645007F64E1 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				809E80321E49E696007F64E1 /* FirstViewController.h */,
+				809E80331E49E696007F64E1 /* FirstViewController.m */,
+				809E80351E49E6BC007F64E1 /* SecondViewController.h */,
+				809E80361E49E6BC007F64E1 /* SecondViewController.m */,
+				809E80381E49E6CA007F64E1 /* ThirdViewController.h */,
+				809E80391E49E6CA007F64E1 /* ThirdViewController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		809E80311E49E66E007F64E1 /* JYNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				809E803B1E49E7A0007F64E1 /* JYNavigationController.h */,
+				809E803C1E49E7A0007F64E1 /* JYNavigationController.m */,
+			);
+			path = JYNavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +235,7 @@
 				TargetAttributes = {
 					809E7FF91E49E595007F64E1 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3NY6R8Z8T4;
 						ProvisioningStyle = Automatic;
 					};
 					809E80121E49E595007F64E1 = {
@@ -248,7 +277,6 @@
 			files = (
 				809E800D1E49E595007F64E1 /* LaunchScreen.storyboard in Resources */,
 				809E800A1E49E595007F64E1 /* Assets.xcassets in Resources */,
-				809E80081E49E595007F64E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				809E80051E49E595007F64E1 /* ViewController.m in Sources */,
+				809E80371E49E6BC007F64E1 /* SecondViewController.m in Sources */,
+				809E803A1E49E6CA007F64E1 /* ThirdViewController.m in Sources */,
 				809E80021E49E595007F64E1 /* AppDelegate.m in Sources */,
+				809E80341E49E696007F64E1 /* FirstViewController.m in Sources */,
 				809E7FFF1E49E595007F64E1 /* main.m in Sources */,
+				809E803D1E49E7A0007F64E1 /* JYNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,14 +342,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		809E80061E49E595007F64E1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				809E80071E49E595007F64E1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		809E800B1E49E595007F64E1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -422,7 +445,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3NY6R8Z8T4;
 				INFOPLIST_FILE = JYNavigationController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.zjy.JYNavigationController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,7 +458,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3NY6R8Z8T4;
 				INFOPLIST_FILE = JYNavigationController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.zjy.JYNavigationController;
 				PRODUCT_NAME = "$(TARGET_NAME)";

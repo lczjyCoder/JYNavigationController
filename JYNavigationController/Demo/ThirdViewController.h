@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ThirdViewController.h
 //  JYNavigationController
 //
 //  Created by zjy on 2017/2/7.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ThirdViewController : UIViewController
 
 @end
-

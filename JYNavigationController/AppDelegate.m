@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "FirstViewController.h"
+#import "JYNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    FirstViewController *vc = [[FirstViewController alloc] init];
+    JYNavigationController *nav = [[JYNavigationController alloc] initWithRootViewController:vc];
+    nav.interactivePopGestureRecognizer.enabled = NO;
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _window.rootViewController = nav;
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 
